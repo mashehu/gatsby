@@ -92,7 +92,7 @@ const optimize = svg => {
       },
     ],
   })
-  return svgo.then(({ data }) => data)
+  return svgo.data
 }
 
 exports.notMemoizedtraceSVG = async ({ file, args, fileArgs, reporter }) => {
